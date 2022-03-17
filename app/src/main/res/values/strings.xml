@@ -6,4 +6,5 @@
     <string name="loading_news">Loading news...</string>
     <string name="check_network">Please check network connection</string>
     <string name="something_went_wrong">Something went wrong!</string>
+    <string name="no_news">No News! Come back later.</string>
 </resources>

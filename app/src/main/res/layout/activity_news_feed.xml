@@ -16,18 +16,18 @@
         android:padding="8dp">
 
         <TextView
+            android:id="@+id/tv_nf_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:text="@{mViewModel.loaderMessage}"
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:visibility="@{mViewModel.loaderMessageVisibility}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            tools:text="Loading..."
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -48,8 +48,8 @@
             style="?attr/progressBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:background="@android:color/transparent"
-            android:visibility="@{mViewModel.isProgressVisible}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

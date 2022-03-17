@@ -5,7 +5,7 @@ import com.daily.news.network.Resource
 import retrofit2.Response
 import javax.inject.Inject
 
-class NewsFeedDataSource @Inject constructor(val persistence : NewsFeedPersistence, val service : NewsFeedService) {
+class NewsFeedRepository @Inject constructor(val persistence : NewsFeedPersistence, val service : NewsFeedService) {
 
     suspend fun getNews(pageNumber : Int) : Response<NewsResponse> {
         return service.getNews(pageNumber)
