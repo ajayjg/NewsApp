@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="source">"Source: "</string>
+    <string name="title">"Title: "</string>
+    <string name="published_at">"Published at "</string>
+    <string name="loading_news">Loading news...</string>
+    <string name="check_network">Please check network connection</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+</resources>
